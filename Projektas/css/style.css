@@ -1,0 +1,223 @@
+
+html, body {
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+*{
+  box-sizing: border-box;
+}
+
+
+/* ---------HEADER | NAV----------------- */
+.header {
+  height: 200px;
+  width: 100%;
+}
+:focus { /* nuima melyna svytejima nuo ivedimo lauku */
+  outline-style: none;
+}
+button:focus {
+  outline-color: rgb(210, 210, 210); /* paspaudus mygtuka atsiranda seselis */
+}
+
+.menu-item-1,
+.menu-item-2,
+.menu-item-3,
+.menu-item-4 {
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.drop-down-1,
+.drop-down-2,
+.drop-down-3,
+.drop-down-4 {
+  display: none;
+  position: absolute;
+  background-color: ;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(210, 210, 210);
+  width: 150%;
+  z-index: 2;
+}
+.drop-down-1 a,
+.drop-down-2 a,
+.drop-down-3 a,
+.drop-down-4 a {
+  display: block;
+}
+.sub-cat{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 110%;
+}
+.sub-cat:hover {    /* sub kategorijos uzvedus pele pasidaro baltos */
+  text-decoration: none;
+  color: white;
+}
+.search-window {
+  display: none;
+  height: 40px;
+  background-color: rgb(210, 210, 210);
+  border: 3px solid rgb(190, 190, 190);
+  border-radius: 8px;
+}
+.extra button {
+  width: 20px;
+  border: none;
+  height: 35px;
+  background-color: rgb(240, 240, 240);
+}
+
+/* ----------REGISTRATION-------------------- */
+.registration-successful {
+  display: none;
+  color: green;
+}
+.fill-fields {
+  display: none;
+  color: red;
+}
+/* -----------LOGIN---------------------- */
+.login-failed {
+  display: none;
+  color: red;
+}
+
+/* ---------MAIN SECTION------------------------- */
+/* ----------HOME CATEGORIES--------------------- */
+aside {
+  border-right: 3px solid rgb(210, 210, 210);
+}
+#card-first,
+#card-second,
+#card-third,
+#card-fourth {
+  border-radius: 15px;
+  background-color: rgb(210, 210, 210);
+}
+#card-main-first,
+#card-main-second,
+#card-main-third,
+#card-main-fourth {
+  border-radius: 15px;
+  background-color: rgb(210, 210, 210);
+}
+#card-subsidiary-first,
+#card-subsidiary-second,
+#card-subsidiary-third,
+#card-subsidiary-fourth {
+  background-color: rgb(210, 210, 210);
+  border-radius: 15px;
+  display: none;
+  border: none;
+}
+
+#card-subsidiary-first a,
+#card-subsidiary-second a,
+#card-subsidiary-third a,
+#card-subsidiary-fourth a {
+  display: block;
+}
+
+main img {
+  border-radius: 15px;
+}
+/* ----------------RESULTS ITEMS--------------- */
+.item {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  color: black;
+}
+.item:hover {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  background-color: rgb(210, 210, 210);
+}
+.clone {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+}
+/* ----------------ITEM------------------------ */
+
+/* ---------------ORDER CONFIRMATION-------------- */
+
+.login-window,
+.user-window {
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 2;
+  height: 30%;
+  width: 30%;
+  top: 200px;
+  right: 0;
+  background-color: rgb(210, 210, 210);
+}
+.register-window {
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+  z-index: 3;
+  width: 30%;
+  top: 200px;
+  right: 0;
+  background-color: rgb(210, 210, 210);
+}
+
+.login-btn,
+.register-btn,
+.submit-registration-btn,
+.settings-btn,
+.user-orders-btn,
+.logout-btn,
+.control-panel-btn {
+  background-color: rgb(240, 240, 240);
+}
+.close-login,
+.close-register,
+.close-user {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 15px;
+}
+
+.admin-order-details {
+  display: none;
+  background-color: rgb(180, 183, 190);
+}
+.hide-admin-order-details {
+  display: none;
+}
+
+.pass-change-fail,
+.pass-change-success {
+  display: none;
+}
+.item {
+  position: relative;
+}
+.admin-buttons {
+  position: absolute;
+  right: 15px;
+  top: 270px;
+}
+
+
+
+/* ------------Footer------------------ */
+
+
+
+/* ------------MEDIA----------------- */
